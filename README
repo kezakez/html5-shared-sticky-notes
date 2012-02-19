@@ -1,0 +1,35 @@
+Thoughts
+40 mins to migrate to a server and get some basic messages passing around.
+using node as server
+using socket.io for web sockets
+an hour to get notes moving
+
+Simple Part: 
+- Use last week's assignment of Sticky notes and create a Collaborative 
+sticky notes app 
+- Multiple browser instances of the application will show the same sticky 
+notes. Changes in one instance reflects the change in all other browser 
+instances. Make use of WebSocket to achieve this. 
+- For instance let's say user1 and user2 access the sticky notes website. 
+User1 creates a sticky note. The user2 can instantly see it in her browser 
+(without doing anything like refreshing the page). 
+  Now if user2 enters any text into the sticky, user1 can see it 
+immidiately, and vice versa. 
+- If user closes the browser, disconnects internet and open the browser 
+again at a later point of time to access the site (offline), she can view 
+the last updated sticky notes and work with it. (Use AppCache to achieve 
+this) 
+Complex part: (Optional. if you complete simple part and want to take up 
+something more challenging) 
+- The user can set time based reminder in sticky notes. When the time is 
+reached, the sticky note vibrates and creates an alarm noise. A stop button 
+stops the sound and vibration. A snooze button makes the alarm ring again 
+after 10 minutes. 
+- Show animation when notes are created and deleted. Effect of scaling up 
+from zero height and width to regular sticky size on creation of a sticky 
+and fading away when a sticky is deleted. 
+We would highly recommend that we all do the Complex part of this app too. 
+If we can complete both the simple and complex parts here, it will give us 
+a lot of exposure to the main features of HTML5. 
+Please post in your questions and recommended solutions about the app and 
+HTML5, here. 
