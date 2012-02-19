@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# 2012-02-19:v8
+index.html
+css/style.css
+js/script.js
+js/jquery.event.drag-2.0.min.js
+js/plugins.js
+js/libs/modernizr-2.5.2.min.js
+js/libs/jquery-1.7.1.min.js
+
+NETWORK:
+*

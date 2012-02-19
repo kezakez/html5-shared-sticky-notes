@@ -1,8 +1,9 @@
 Thoughts
-40 mins to migrate to a server and get some basic messages passing around.
 using node as server
 using socket.io for web sockets
+40 mins to migrate to a server and get some basic messages passing around.
 an hour to get notes moving
+40 mins to get caching going
 
 Simple Part: 
 - Use last week's assignment of Sticky notes and create a Collaborative 

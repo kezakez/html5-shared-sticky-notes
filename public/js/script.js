@@ -1,9 +1,17 @@
 $(function () {
-	var socket = io.connect('http://localhost');
-	socket.on('notedata', function (data) {
-		// update notes from data
-		updateNote(data.id, data.text, data.position);
-	});
+	var socket;
+	try {
+		socket = io.connect('http://localhost');
+	} catch (err) {
+		socket = null;
+		io = null;
+	}
+	if (io) {
+		socket.on('notedata', function (data) {
+			// update notes from data
+			updateNote(data.id, data.text, data.position);
+		});
+	}
 
 	function updateNote(id, text, position) {
 		var newnote, notetext;
@@ -62,7 +70,9 @@ $(function () {
 		note.position = position;
 		localStorage.setItem(id, JSON.stringify(note));
 		
-	  socket.emit('notedata', note);
+		if (io) {
+			socket.emit('notedata', note);
+		}
 	}
 	
 	var id = loadNotes();
