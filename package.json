@@ -5,8 +5,8 @@
          "start": "node server.js"
        },
        "dependencies": { 
-        	"express": ">= 2.5.8",
-        	"socket.io": ">= 0.8.7"
+        	"express": "^4.22.3",
+        	"socket.io": "^4.8.4"
        },
        "engine": "node 0.6.6"
 }
